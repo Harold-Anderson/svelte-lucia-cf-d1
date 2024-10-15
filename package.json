@@ -13,7 +13,7 @@
     "format": "prettier --write .",
     "d1:gen": "drizzle-kit generate:sqlite --config=drizzle.config.ts",
     "d1:mig:local": "wrangler d1 migrations apply sveltedb --local",
-    "d1:mig:prod": "wrangler d1 migrations apply sveltedb"
+    "d1:mig:prod": "wrangler d1 migrations apply sveltedb --remote"
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "^4.1.0",
